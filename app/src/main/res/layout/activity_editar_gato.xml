@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.EditarGatoActivity"
+    android:padding="16dp"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDITAR GATO"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+        <ImageView
+            android:id="@+id/imgGato"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/mitenss"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/lblNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:backgroundTint="@color/imput"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raza"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/lblRaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:backgroundTint="@color/imput"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Campo Edad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edad (meses o años)"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/lblEdad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:backgroundTint="@color/imput"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/cmbSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/imput"
+            android:entries="@array/sexo"
+            android:paddingVertical="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtTamano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamaño"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/cmbTamano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/imput"
+            android:entries="@array/tamano"
+            android:paddingVertical="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:backgroundTint="#230F04"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:minWidth="80dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar"
+                android:backgroundTint="#230F04"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:minWidth="80dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

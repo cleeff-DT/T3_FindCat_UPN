@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fondo"
+    tools:context=".fragmentos.MasFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Nuevo Reporte"/>
+                <ImageView
+                    android:id="@+id/frgMasImgPreview"
+                    android:layout_width="500px"
+                    android:layout_height="500px"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fotogato" />
+                <Button
+                    android:id="@+id/frgMasBtnTomarFoto"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="80dp"
+                    android:textAllCaps="false"
+                    android:text="@string/frgMasBtnTomarFoto"/>
+                <Spinner
+                    android:id="@+id/frgMasCboTipoReportes"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+                    <EditText
+                        android:id="@+id/frgMasTxtDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="5"
+                        android:hint="@string/frgMasTxtDescripcion"
+                        android:maxLength="255"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- TextView para mostrar el link de la ubicación -->
+                <TextView
+                    android:id="@+id/frgMasTxtUbicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Link de ubicación"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <!-- Botón para obtener la ubicación actual -->
+                <Button
+                    android:id="@+id/frgMasBtnObtenerUbicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obtener Ubicación"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/frgMasBtnEnviar"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="false"
+                    android:text="@string/frgMasBtnEnviar"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</FrameLayout>

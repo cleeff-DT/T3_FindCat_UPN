@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".actividades.AlbergueSanIsidroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondoMenu"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp">
+
+            <!-- Contenido dentro del CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Icono superior -->
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/icon_albergue"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Albergues de Animales en Lima"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Nombre del albergue -->
+                <TextView
+                    android:id="@+id/txtNombreAlbergue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Huellitas Felices para Gatos"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Ubicación -->
+                <TextView
+                    android:id="@+id/txtUbicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicación: San Isidro, Lima"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Descripción -->
+                <TextView
+                    android:id="@+id/txtDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Hola, somos Huellitas Felices, un refugio dedicado exclusivamente a gatos. Rescatamos gatos de la zona de Camino Real y alrededores en el distrito de San Isidro. Proporcionamos atención veterinaria, alimentos y mucho cariño, mientras buscamos familias responsables para su adopción."
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Cantidad de animales -->
+                <TextView
+                    android:id="@+id/txtCantidadAnimales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad de animales: 40 gatos"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Contacto -->
+                <TextView
+                    android:id="@+id/txtContacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contacto: Facebook - @HuellitasFelicesPeru, WhatsApp: +51 987 654 098"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Donaciones -->
+                <TextView
+                    android:id="@+id/txtDonaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Donaciones:\nYape o Plin: 987654098 (Titular: José Castillo)"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Botón de regresar -->
+                <Button
+                    android:id="@+id/btnRegresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="#8B4513"
+                    android:padding="12dp"
+                    android:text="Regresar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

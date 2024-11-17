@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.PoliticaPrivacidadActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondoMenu"
+        android:padding="60dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="10dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <!-- Contenedor vertical para los elementos del formulario -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="634dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!-- Imagen al inicio -->
+                <ImageView
+                    android:id="@+id/imgContacto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/politicaseguridad" />
+
+                <!-- Mensaje de contacto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="Politicas de Privacidad "
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- ScrollView para el texto largo -->
+
+                <!-- Botón de regresar -->
+
+                <ScrollView
+                    android:layout_width="239dp"
+                    android:layout_height="372dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/termsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:lineSpacingExtra="8dp"
+
+                        android:padding="10dp"
+                        android:text="\n
+          Actualizado el 01-09-2024
+ \n\n
+ \n            Bienvenido a Find Cat.
+\n\n\n
+        Al acceder y utilizar nuestra
+\n           aplicación móvil, aceptas
+\n             los siguientes politicas
+\n                      de seguridad.
+ \n\n
+
+1. Información que recopilamos\n\n
+   • Datos personales del usuario: Nombre, apellidos, DNI, teléfono, distrito, correo electrónico, y contraseña. Estos datos se utilizan para identificar a los usuarios, validar la veracidad de la información y permitir la comunicación dentro de la plataforma.
+
+   \n\n
+
+   • Datos sobre los gatos: Foto, nombre, raza, edad, sexo (Hembra o Macho) y tamaño (pequeño, mediano o grande), con el fin de ayudar en la identificación y localización de mascotas.
+
+   \n\n
+
+   • Datos del anuncio: Foto del gato, descripción, y ubicación actual (si es proporcionada por el usuario al momento de cargar el anuncio).
+
+   \n\n
+
+   • Autenticación con terceros: Permitimos la autenticación mediante cuentas de Facebook para simplificar el proceso de registro y autenticación. Los datos obtenidos de estas cuentas estarán sujetos a esta Política de Privacidad.
+
+   \n\n
+
+2. Métodos de recopilación de datos\n\n
+   • Formulario de Registro: La información personal y de contacto se recopila a través de un formulario de registro seguro en la aplicación.
+
+   \n\n
+
+   • Permisos de Acceso: Para el funcionamiento correcto de la app, solicitamos acceso a la ubicación, cámara y galería del dispositivo, así como la habilitación de notificaciones. Los usuarios pueden gestionar estos permisos desde la configuración de su dispositivo en cualquier momento.
+
+   \n\n
+
+3. Uso de la información\n\n
+   • Verificación de la información: Validamos la veracidad de los datos proporcionados para evitar abusos y garantizar un ambiente seguro dentro de la comunidad de Find Cat.
+
+   \n\n
+
+   • Estadísticas y mejora continua: Los datos recopilados se usan de forma anónima y estadística para analizar el uso de la app y mejorar la experiencia del usuario.
+
+   \n\n
+
+   • Notificaciones personalizadas: Los datos de ubicación y preferencia de usuarios pueden ser usados para enviar notificaciones relevantes sobre gatos reportados cerca de su área.
+
+   \n\n
+
+4. Compartición de la información\n\n
+   • Con terceros: Actualmente, Find Cat no comparte datos personales con terceros. En caso de que esto cambie, notificaremos a los usuarios y les daremos la opción de aceptar o rechazar dicha política de compartición de datos.
+
+   \n\n
+
+5. Retención y eliminación de datos\n\n
+   • Desactivación de cuentas: Los usuarios pueden desactivar sus cuentas temporalmente. Durante este periodo, el perfil y los anuncios estarán inactivos, y el usuario no podrá interactuar en los comentarios.
+
+   \n\n
+
+   • Eliminación permanente: Si una cuenta permanece desactivada durante más de tres meses, Find Cat se reserva el derecho de eliminarla permanentemente junto con todos los datos asociados.
+
+   \n\n
+
+6. Medidas de seguridad\n\n
+   • Protección de datos: Implementamos medidas de seguridad como encriptación y control de acceso para proteger la información de los usuarios. Sin embargo, ningún sistema es completamente seguro, y no garantizamos una protección absoluta.
+
+   \n\n
+
+   • Actualización de seguridad: Revisamos y actualizamos nuestras medidas de seguridad regularmente para mantener los datos protegidos.
+
+   \n\n
+
+7. Derechos del usuario\n\n
+   • Acceso y corrección: Los usuarios tienen el derecho de acceder, corregir o actualizar sus datos personales en cualquier momento.
+
+   \n\n
+
+   • Restricción de tratamiento: Los usuarios pueden limitar ciertos usos de sus datos, como las notificaciones push, gestionando las configuraciones en la App.
+
+   \n\n
+
+8. Modificaciones de la Política de Privacidad\n\n
+   • Notificación de cambios: Nos reservamos el derecho de modificar esta política en cualquier momento. En caso de cambios significativos, se notificará a los usuarios, y el uso continuo de la app implicará la aceptación de los términos actualizados.
+"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/btnRegresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="#8B4513"
+                    android:onClick="regresar"
+                    android:text="Regresar"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
